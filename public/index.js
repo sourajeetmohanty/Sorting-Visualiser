@@ -78,7 +78,7 @@ function setup() {
 
 
     fill(555);
-
+    frameRate(60)
     noStroke();
     noLoop();
   }
