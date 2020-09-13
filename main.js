@@ -2,7 +2,10 @@ const express = require('express')
 const path = require('path');
 
 const server = express()
-const port = 3000
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 server.get('/profile', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
