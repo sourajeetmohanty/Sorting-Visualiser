@@ -1,4 +1,3 @@
-
 // let txt;
 // $('.dropdown-menu a').on('click', function () {
 //       txt= ($(this).text());
@@ -52,7 +51,8 @@ function setup() {
     sortHist = [];
     historyIndex = 0;
 
-    createCanvas(900, 680);
+    let canvas = createCanvas(1700, 680);
+    canvas.parent('sorting-canvas');
   colorMode(HSB, height);
   for (i = 0; i < numLines; i++) {
     values[i] =random(height);
@@ -62,8 +62,8 @@ function setup() {
   noLoop();
   } else if (sortName !== undefined) {
 
-    createCanvas(900, 680);
-    
+    let canvas = createCanvas(1700, 680);
+    canvas.parent('sorting-canvas');
     numbers = Array(elements).fill().map(() => random(1));
     columnWidth = width / numbers.length;
 
@@ -86,7 +86,7 @@ function setup() {
 
 function draw() {
   if (sortName==="mergeSort") {
-    background(0);
+    background(1000);
   for (i = 0; i < sortHist[historyIndex].length; i++) {
   //  let col = color(sortHist[historyIndex][i], height, height);
     stroke('white');
@@ -101,7 +101,7 @@ function draw() {
 } else if (sortName !== undefined) {
     
   console.log("Udu WEDs Bandu")
-	background(0);
+	background(1000);
 
 	for (let i = 0; i < numbers.length; i++) {
 		let columnHeight = map(numbers[i], 0, 1, 0, height);
@@ -311,4 +311,4 @@ function* selectionSorter() {
        }
      }
      return arrays;
-    }    
+    }  

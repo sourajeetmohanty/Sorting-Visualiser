@@ -1,0 +1,32 @@
+canvas {
+    display: block;
+  }
+
+#vertical-line{
+    border-left: 1px solid orangered;
+    height: 50px;
+    position: relative;
+}  
+.nav li {
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+}
+.nav li:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+}
+.nav li:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+}
+.nav li a:hover, .nav li a:focus, .nav li:hover{
+  color: orangered !important;
+}
