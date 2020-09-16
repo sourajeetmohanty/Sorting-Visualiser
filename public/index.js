@@ -51,7 +51,7 @@ function setup() {
     sortHist = [];
     historyIndex = 0;
 
-    let canvas = createCanvas(1700, 680);
+    let canvas = createCanvas(1400, 620);
     canvas.parent('sorting-canvas');
   colorMode(HSB, height);
   for (i = 0; i < numLines; i++) {
@@ -62,7 +62,7 @@ function setup() {
   noLoop();
   } else if (sortName !== undefined) {
 
-    let canvas = createCanvas(1700, 680);
+    let canvas = createCanvas(1400, 620);
     canvas.parent('sorting-canvas');
     numbers = Array(elements).fill().map(() => random(1));
     columnWidth = width / numbers.length;
