@@ -1,2 +1,2 @@
 # Sorting-Visualiser
-deployed at : sorter-network.herokuapp.com
+deployed at : https://sorter-network.herokuapp.com/
